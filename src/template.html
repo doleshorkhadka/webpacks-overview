@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><% htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		<form onSubmit="{handleSubmit}" class="form">
+			<img id="userImg" />
+			<h2>User Profile Editor</h2>
+
+			<div>
+				<label>
+					Name:
+					<input name="name" />
+				</label>
+			</div>
+
+			<div>
+				<label>
+					Email:
+					<input name="email" />
+				</label>
+			</div>
+
+			<h3>Social Profiles</h3>
+			<div>
+				<label>
+					Twitter:
+					<input name="twitter" />
+				</label>
+			</div>
+			<div>
+				<label>
+					LinkedIn:
+					<input name="linkedIn" />
+				</label>
+			</div>
+
+			<h3>Tags</h3>
+			<ul></ul>
+			<button type="button" onClick="{handleAddTag}">Add Tag</button>
+
+			<br />
+			<button type="submit">Save Profile</button>
+		</form>
+	</body>
+</html>
