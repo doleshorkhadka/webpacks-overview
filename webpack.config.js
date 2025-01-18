@@ -6,9 +6,10 @@ module.exports = {
 	mode: "production",
 	entry: { bundle: path.resolve(__dirname, "src/index.js") },
 	output: {
-		filename: "[name].js",
+		filename: "[name][contenthash].js",
 		path: path.resolve(__dirname, "dist"),
 		clean: true,
+		assetModuleFilename: "[name][ext]",
 	},
 	devServer: {
 		static: {
